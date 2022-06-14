@@ -10,7 +10,7 @@ class TasksController < ApplicationController
   def create
     @task = Task.new(task_params)
     @task.save
-    redirect_to root_path
+    redirect_to action: :index
   end
 
   def edit
@@ -20,7 +20,7 @@ class TasksController < ApplicationController
   def update
     @task = Task.find(params[:id])
     if @task.update(task_params)
-      redirect_to root_path
+      redirect_to action: :index
     else
       render 'edit', status: unprocessable_entry
     end
@@ -29,7 +29,7 @@ class TasksController < ApplicationController
   def destroy
     @task = Task.find(params[:id])
     @task.destroy
-    redirect_to root_path, status: :see_other
+    redirect_to action: :index, status: :see_other
   end
 
   private
