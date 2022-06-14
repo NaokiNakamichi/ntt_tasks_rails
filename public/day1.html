@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      初めてのHTML
+    </title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">初めての見出し - h1 </h1>
+      <p>初めての段落 p </p>
+      <p>区切り線 hr</p>
+      <hr>
+    </header>
+
+    <h2 id="day1">Day1 HTML</h2>
+
+    <ul>
+      <li>
+        順序なしリスト　- ul
+      </li>
+      <li>それぞれの要素は li
+        <ul>
+          <li>ulの中にulで入れ後構造も可能</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ol>
+      <li>順序ありリスト　- ol</li>
+      <li> ol>li*3みたいな書き方でショートカットが可能 </li>
+    </ol>
+
+    <dl>
+      <dt>説明リスト dt</dt>
+      <dd>補足 dd</dd>
+
+      <dt>dt は Description Term</dt>
+      <dd>dd は Description Definition</dd>
+    </dl>
+
+    <p><strong>強調</strong>したい - br </p>
+
+    <h2>見出し レベル2</h2>
+    <h3>見出し レベル3</h3>
+    <h4>見出し レベル4</h4>
+    <h5>見出し レベル5</h5>
+    <h6>見出し レベル6</h6>
+
+    <img src="https://dl.dropboxusercontent.com/s/hgql4ez48vtzcr7/dog.jpg" width="200" height="150" alt="犬の画像">
+    <p><small>&copy; 2020 Yuta Nakamura. 著作権表示 ＆copy </small></p>
+    <p>画像はインターネット上のものも使える。著作権等は注意</p>
+    <a href="#title">一番上へ</a>
+    <a href="https://www.google.com/?hl=ja" target="_blank" rel="noopener">Google</a>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ヘッダーはth</th>
+          <th>trで区切る</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ボディーはtbodyでまとめる</td>
+          <td>それぞれの要素はtdで囲う</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>フッターはtflootで囲う
+          </td>
+          <td>それぞれの要素はtdで囲う</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table border="1">
+      <caption>行方向（横方向）に結合</caption>
+      <tr>
+        <th colspan="3">セルを結合 colspan</th>
+      </tr>
+      <tr>
+        <td>コンテンツ1</td>
+        <td>コンテンツ2</td>
+        <td>コンテンツ3</td>
+      </tr>
+    </table>
+    <br>
+    <table border="1">
+      <caption>列方向（縦方向）に結合</caption>
+      <tr>
+        <td rowspan="3">セルを結合 rowspan</td>
+        <td>コンテンツ1</td>
+      </tr>
+      <tr>
+        <td>コンテンツ2</td>
+      </tr>
+      <tr>
+        <td>コンテンツ3</td>
+      </tr>
+    </table>
+
+    <form action="#" method="POST">
+      <input type="text" name="username" placeholder="ログイン押しても">
+      <input type="password" name="password" placeholder="何も起こりません">
+      <input type="submit" value="ログイン">
+    </form>
+
+    <form action="#" method="POST">
+      <dl>
+        <dt>お名前</dt>
+        <dd><input type="text" name="username"></dd>
+
+        <dt>メールアドレス</dt>
+        <dd><input type="text" name="email"></dd>
+
+        <dt>お住いの地域</dt>
+        <dd>
+          <select name="area">
+            <option value="" selected>選択してください</option>
+            <option value="hokkaido">北海道</option>
+            <option value="tohoku">東北</option>
+            <option value="kanto">関東</option>
+            <option value="chubu">中部</option>
+            <option value="kinki">近畿</option>
+            <option value="shikoku">四国</option>
+            <option value="kyushu">九州</option>
+            <option value="okinawa">沖縄</option>
+          </select>
+        </dd>
+
+        <dt>性別</dt>
+        <dd>
+          <input type="radio" name="gender" value="male" checked>男性
+          <input type="radio" name="gender" value="female">女性
+        </dd>
+      </dl>
+    </form>
+
+
+
+
+
+
+
+  </body>
+
+</html>

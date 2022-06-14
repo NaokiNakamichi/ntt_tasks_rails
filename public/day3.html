@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="day3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <main>
+            <h1>Day3 JavaScript</h1>
+            <section>
+                <h2>JavaScriptの出力について</h2>
+                <ul>
+                    <li>console.log('Hello');</li>
+                    <li>Google chrome のDeveloperツールでconsoleから見ることができる。</li>
+                    <li>script src="day3.js"で読み込むことができる。</li>
+                </ul>
+                <h2>四則演算</h2>
+
+
+                <table>
+                    <thead>
+                        <tr>
+
+                            <th scope="col">演算</th>
+                            <th scope="col">記法</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td data-label="演算">足し算</td>
+                            <td data-label="記法">+</td>
+                        </tr>
+                        <tr>
+
+                            <td data-label="演算" class="txt">引き算</td>
+                            <td data-label="記法" class="price">-</td>
+                        </tr>
+                        <tr>
+
+                            <td data-label="演算" class="txt">掛け算</td>
+                            <td data-label="記法" class="price">*</td>
+
+
+                        </tr>
+                        <tr>
+
+                            <td data-label="演算" class="txt">割り算</td>
+                            <td data-label="記法" class="price"> / </td>
+
+
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>変数</h2>
+
+                <ul>
+                    <li>var hoge = "hoge"; で変数を宣言、初期値を代入することができる。</li>
+
+                </ul>
+
+                <h2>処理一覧</h2>
+
+                <li>条件分岐 if else switch</li>
+                <li>繰り返し処理 for while</li>
+                <li>関数</li>
+
+                <h2>DOM操作とは</h2>
+                <p>Document Object Model Webページを動的に操作する仕組み</p>
+                <p>DOMツリーとはHTMLのタグのツリー構造を指すもの</p>
+                <p>ノード　DOMツリーの一つ一つタグ</p>
+
+                <h2>実際のDOM操作</h2>
+                <p>getElementByID： IDによる要素検索</p>
+                <p id="result">下のボタンを押すとここの文字列が変わる</p>
+                <input name="input_form_by_name" type="text"></input>
+                <input type="button" value="取得" onclick="show()">
+
+                <h2>ノードの追加</h2>
+                <ul id="list"></ul>
+                <input type="button" value="add" onclick="append()">
+
+
+                <div class="container_standard">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+
+                <input type="button" value="削除" onclick="remove()">
+            </section>
+
+
+        </main>
+
+        <script src="day3.js"></script>
+
+        <script>
+            console.log('Hello');
+        </script>
+    </body>
+
+</html>

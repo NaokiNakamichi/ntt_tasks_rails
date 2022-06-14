@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            初めてのCSS
+        </title>
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Day2 CSS</h1>
+
+        <h2>CSS (Cascading Style Sheets)</h2>
+
+        <p>HTMLを装飾することができる</p>
+
+
+        <h3>h3の色を青にする。 h3{color: blue;}</h3>
+        <h3>h3の間隔を空ける padding: 10px</h3>
+        <p class="color">好きな色を使いたいとき（紅紫）{color: #b44c97}</p>
+        <p class="red">class = "red"のようにすることでセレクターとしてredと指定した部分のみにCSSを設定できる</p>
+
+        <p><a href="#">リンクの色変えてみる マウスオーバー状態、訪問済みで色が変わる。</a></p>
+        <p class="font">font-familyでフォントの変更もできる。</p>
+
+        <div class="container_standard">
+            <div class="item">flexで</div>
+            <div class="item">横並び</div>
+            <div class="item">にできる</div>
+        </div>
+
+        <div class="container_space_evenly">
+            <div class="item">justify-contentを</div>
+            <div class="item">space_evenlyで</div>
+            <div class="item">余白を均等にできる</div>
+        </div>
+
+        <h1>はじめてのBootstrap</h1>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <p>CSSのフレームワーク的なもの</p>
+        <h2>Bootstrapのボタン</h2>
+        <button type="button">普通のボタン</button>
+        <button type="button" class="btn btn-primary">Primaryは青色</button>
+        <button type="button" class="btn btn-success">Successは緑色</button>
+        <button type="button" class="btn btn-outline-primary">outlineは外枠だけ</button>
+        <button type="button" class="btn btn-primary btn-lg">lgは大きなボタン</button>
+        <button type="button" class="btn btn-primary btn-sm">smは小さなボタン</button>
+        <button type="button" class="btn btn-lg btn-primary" disabled>disableで無効にできる</button>
+
+<h2>Bootstrapのナビゲーションバー</h2>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ccc;">
+            <div class="container-fluid">
+              <a href="#" class="navbar-brand">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Menu1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link disabled">disableで無効にできる</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <h2>Bootstrapのグリッドシステム
+          </h2>
+          <div class="container">
+            <div class="row">
+              <div class="col orange">
+                1 of 2
+              </div>
+              <div class="col orange">
+                2 of 2
+              </div>
+            </div>
+            <div class="row">
+              <div class="col orange">
+                1 of 3
+              </div>
+              <div class="col orange">
+                2 of 3
+              </div>
+              <div class="col orange">
+                3 of 3
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col orange">
+                1 of 3
+              </div>
+              <div class="col-6 orange">
+                2 of 3 (wider col-6)
+              </div>
+              <div class="col orange">
+                3 of 3
+              </div>
+            </div>
+            <div class="row">
+              <div class="col orange">
+                1 of 3
+              </div>
+              <div class="col-5 orange">
+                2 of 3 (col-5)
+              </div>
+              <div class="col orange">
+                3 of 3
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="container">
+            
+            <div class="row">
+              <div class="col-sm-9 orange">
+                 9:3
+                <div class="row">
+                  <div class="col-sm-8 orange">ネストすることも可能</div>
+                  <div class="col-sm-4 orange">8:4</div>
+                </div>
+              </div>
+              <div class="col-sm-3 orange">
+                広々
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="bg-light p-3 p-sm-5 my-4 rounded">
+              <h1>BootstrapのJumbotron</h1>
+              <p>はじめてのBootstrapへようこそ</p>
+              <button class="btn btn-primary btn-lg">Sign Up</button>
+            </div>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+
+
+
+        <div class="box">
+            <p class="box__text">
+                CSS<br>
+                完全に理解した
+            </p>
+        </div>
+    </body>
+
+</html>
